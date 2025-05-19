@@ -1,0 +1,9 @@
+Now, when I type "git status" we'll see the "README.txt" file under the "Changes not staged for commit" heading, and the message at the bottom that says "no changes added to commit (use "git add" and/or "git commit -a")". So, let's do that, we'll use the "-a" option with the "git commit" command.
+
+First, I'll show you what would happen if we tried a standard commit without the "-a" option.
+
+I'll type "git commit" and press Enter.
+
+When I do that, I get the same message that says "no changes added to commit" because the modified file wasn't staged when I tried to commit it. I could use "git add" and then "git commit", but let's use the "-a" option to do it all in one command.
+
+I'll type "git commit -a" and press Enter.

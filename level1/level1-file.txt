@@ -1,0 +1,33 @@
+
+Previous
+Committing Staged Files with the "git commit" Command
+Next
+Viewing Info About Previous Commits with "git log"
+The "git commit" command has, like most git commands, a large number of options that you can pass to modify the way the command is performed. I'll just be showing you two now, but don't forget that if you want to know what options you have, you can type "git help ".
+
+When I type "git help commit", I'm shown the manual page for the "commit" command. As I scroll down, you'll see there are a ton of options that can be passed when you do a commit. I'll just be demonstrating the "-m" and "-a" options, because they are arguably the most commonly used options. I use them just about every time I use Git.
+
+I'll press the "q" key to quit out of the Git manual.
+
+Writing the Commit Message In-line with the "-m" Option.
+There is a faster way to write your commit message when performing a commit. The "-m" option allows you to write the message in-line with the "commit" command, instead of first opening the message interface, writing the message, and saving and quiting the message interface.
+
+I'll add a few files to the "sites/all" directory that I typically include in each Drupal site I build. These include:
+
+sites/all/modules/contrib/README.txt
+sites/all/modules/custom/README.txt
+sites/all/modules/features/README.txt
+sites/all/libraries/README.txt
+sites/all/drush/README.txt
+Now, when I type "git stats" we'll see the new directories. (Note: like before, we don't see the individual files. When a new directory is detected, the directory will be listed instead of each file inside the directory. This is because there could be hundreds of files, and you'll typically want to add all files in a new directory. If you want to select only specific files inside the directory, you have to know the explicit paths, and type them in yourself. Once a single file is added explicitly, however, the rest will be listed here individually, since you've already expressed that you want track individual files as opposed to the entire directory.)
+
+Okay, so let's use the "-m" option to add our commit message in-line with the commit command.
+
+Before, we simply typed "git commit" and were taken to the commit message interface to add our message, which is actually very useful when you need to add a long or multi-lined message. If instead you're just going to add a brief message, you can simply type "git commit -m ", and you won't have to use VI at all for your commit message.
+
+I'll type "git add ." to add all of the new files to the staging area. (To verify they are staged, I'll type "git status".)
+Now, I'll type "git commit -m "Created drush, libraries, and separate module directories"" and press Enter.
+
+When that's done, we get a message like before that shows the commit message, files changed and line insertions.
+
+This can make committing code much faster than having to write your commit messages in VI. And if we run "git status", we'll see the message "nothing to commit, working directory clean", which tells us that the new files are under version control.

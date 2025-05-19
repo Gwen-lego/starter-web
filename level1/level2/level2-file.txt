@@ -1,0 +1,7 @@
+When you edit an existing file it will not be committed with the staged files unless you first manually add it to the list of staged files. To demonstrate, I'll update the "sites/all/modules/README.txt" file with my own information about the "contrib", "custom" and "features" directories that I created.
+
+I'll type "vi sites/all/modules/README.txt" and press Enter.
+
+In this file, you'll actually notice the second paragraph mentions that it's okay to organize modules into subdirectories like "contrib" and "custom". I'll actually delete everything in this file and write my own information. (I'll delete everything after my cursor by typing "dG" (d Shift-G).)
+
+Now, I'll press "i" to enter insert mode, and type
