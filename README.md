@@ -15,3 +15,7 @@ i MODIFY THIS FILE
 ### Final Chapter
 
 tHIS IS A SIMPLE END
+
+#### Copyright
+
+i Easy tr4anslation
