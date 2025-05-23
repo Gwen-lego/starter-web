@@ -22,3 +22,4 @@ i Easy tr4anslation
 
 adding a line fo rexample
 More changes from my feature branch
+All right reserved
