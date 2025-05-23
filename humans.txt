@@ -10,6 +10,7 @@
 	tHANKS TO ALL MY STUDENTS
 	Please leave a review if you like this course
     <name>
+    stashing
 
 # TECHNOLOGY COLOPHON
 
